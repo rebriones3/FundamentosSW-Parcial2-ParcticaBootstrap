@@ -1,0 +1,153 @@
+/* ============================================================
+   portafolio.css
+   Estilos propios de pages/portafolio.html.
+   Se carga despues de general.css.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: SECCION INTRODUCTORIA
+   Borde dorado a la izquierda para destacar la presentacion.
+   En el HTML: id="intro" en la section.
+   ============================================================ */
+
+#intro {
+    border-left: 8px solid #dba112;
+    background-color: #fffef7;
+}
+
+.lema {
+    background-color: #0d1910;
+    color: #dba112;
+    font-style: italic;
+    font-size: 17px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.lema i {
+    font-size: 14px;
+    margin: 0 6px;
+    color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 2: TARJETAS DE HABILIDAD
+   Se aplica con class="tarjeta-habilidad" en cada article.
+   Cambia el borde al pasar el mouse encima.
+   ============================================================ */
+
+.tarjeta-habilidad:hover {
+    border-color: #1b7505;
+}
+
+.tarjeta-habilidad h3 {
+    color: #1b7505;
+    margin-top: 0;
+}
+
+
+/* ============================================================
+   BLOQUE 3: SECCION DE EXPERIENCIA
+   Borde verde a la izquierda y fondo claro.
+   En el HTML: id="experiencia" en la section.
+   ============================================================ */
+
+#experiencia {
+    border-left: 6px solid #1b7505;
+    background-color: #f7fff4;
+}
+
+
+/* ============================================================
+   BLOQUE 4: SECCION DE PROYECTOS
+   Fondo ligeramente amarillento para diferenciarla.
+   En el HTML: id="proyectos" en la section.
+   ============================================================ */
+
+#proyectos {
+    background-color: #fffef7;
+}
+
+
+/* ============================================================
+   BLOQUE 5: TARJETAS DE PROYECTO
+   Se aplica con class="proyecto-card" en cada article.
+   ============================================================ */
+
+
+.proyecto-card:hover {
+    border-color: #dba112;
+}
+
+.proyecto-card h3 {
+    color: #0d1910;
+    border-bottom: 2px solid #dba112;
+    padding-bottom: 6px;
+}
+
+.proyecto-card figure {
+    margin-bottom: 14px;
+}
+
+.proyecto-card img {
+    border: 2px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 6: TABLA DE PROGRESO
+   Encabezados oscuros con texto dorado.
+   En el HTML: id="progreso" en la section.
+   ============================================================ */
+
+#progreso {
+    border-left: 6px solid #dba112;
+}
+
+#progreso th {
+    background-color: #0d1910;
+    color: #dba112;
+}
+
+#progreso td:first-child {
+    font-weight: bold;
+    color: #1b7505;
+}
+
+#progreso progress {
+    width: 120px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+#progreso span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0d1910;
+}
+
+
+/* ============================================================
+   BLOQUE 7: SECCION DE OBJETIVOS
+   El details cambia de color cuando esta abierto.
+   En el HTML: id="objetivos" en la section.
+   ============================================================ */
+
+#objetivos {
+    background-color: #f4f6f8;
+}
+
+#objetivos details {
+    border-left: 5px solid #1b7505;
+    background-color: white;
+}
+
+#objetivos details[open] {
+    border-left-color: #dba112;
+    background-color: #fffef7;
+}
