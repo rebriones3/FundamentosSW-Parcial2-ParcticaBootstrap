@@ -71,6 +71,6 @@ No JavaScript or frameworks were used. Everything is pure HTML and CSS.
 
 ## Author
 
-**Geovanny Brito Casanova**
+**Estefany Briones**
 Web Fundamentals Course — Semantic HTML and CSS
 Ecuador, 2026
