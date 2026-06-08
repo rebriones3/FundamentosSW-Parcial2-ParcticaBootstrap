@@ -1,14 +1,14 @@
-# Mi Perfil Profesional — PracticaCSSFinal
+# My Professional Profile — PracticaCSSFinal
 
-## Descripcion del proyecto
+## Project Description
 
-Este sitio web lo hice como practica de la materia de Fundamentos Web. La idea era aprender a organizar una pagina usando HTML de forma ordenada y despues darle estilo con CSS. Incluye varias paginas conectadas entre si, formularios, multimedia y una seccion de portafolio personal.
+I made this website as a practice project for my Web Fundamentals course. The idea was to learn how to organize a page using HTML in a structured way and then style it with CSS. It includes several connected pages, forms, multimedia, and a personal portfolio section.
 
-Todo el sitio esta pensado para verse bien tanto en computadora como en celular.
+The entire site is designed to look good on both desktop and mobile.
 
 ---
 
-## Estructura de carpetas
+## Folder Structure
 
 ```
 PracticaCSSFinal/
@@ -41,36 +41,36 @@ PracticaCSSFinal/
 
 ---
 
-## Paginas del sitio
+## Site Pages
 
-**index.html** — pagina principal. Tiene la presentacion, intereses, multimedia, formularios y una tabla de horarios.
+**index.html** — main page. Includes the introduction, interests, multimedia, forms, and a schedule table.
 
-**buscar.html** — pagina que explica como funciona el metodo GET en los formularios. Tiene su propio formulario de busqueda.
+**buscar.html** — page that explains how the GET method works in forms. Has its own search form.
 
-**contacto.html** — datos de contacto, redes sociales y un formulario con validaciones.
+**contacto.html** — contact information, social media links, and a form with validations.
 
-**portafolio.html** — pagina nueva creada para esta practica. Muestra el perfil profesional, habilidades, proyectos y una tabla de progreso.
-
----
-
-## Capturas de pantalla
-
-> Agregar capturas de pantalla de cada pagina en vista escritorio y vista movil.
+**portafolio.html** — new page created for this practice. Displays the professional profile, skills, projects, and a progress table.
 
 ---
 
-## Tecnologias utilizadas
+## Screenshots
+
+> Add screenshots of each page in desktop and mobile view.
+
+---
+
+## Technologies Used
 
 - HTML5
 - CSS3
-- Font Awesome 6.5.0 (iconos, cargado desde CDN)
+- Font Awesome 6.5.0 (icons, loaded from CDN)
 
-No se uso JavaScript ni ningun framework. Todo es HTML y CSS puro.
+No JavaScript or frameworks were used. Everything is pure HTML and CSS.
 
 ---
 
-## Autor
+## Author
 
 **Geovanny Brito Casanova**
-Clase de Fundamentos Web — HTML Semantico y CSS
+Web Fundamentals Course — Semantic HTML and CSS
 Ecuador, 2026
