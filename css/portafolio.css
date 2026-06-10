@@ -151,3 +151,103 @@
     border-left-color: #dba112;
     background-color: #fffef7;
 }
+
+/* ============================================================
+   BLOQUE 8: RESPONSIVE
+   Ajustes específicos de portafolio.html para móvil.
+   Se aplica después de los estilos de general.css.
+   ============================================================ */
+
+
+
+
+/* ── MÓVIL: hasta 700px ────────────────────────────────────── */
+@media screen and (max-width: 700px) {
+
+    nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav a{
+        width: calc(40% - 10px);
+        margin: 5px 0;
+        text-align: center;
+    }
+/*
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 90%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    */
+
+    /* Tarjetas de proyecto: una por fila, imagen al 100% */
+    /* (equivalent to .mis-proyectos { grid-template-columns: 1fr } */
+    /* En tu HTML los proyecto-card son articles, se apilan solos) */
+    .proyecto-card {
+        width: 100%;
+    }
+
+    .proyecto-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .proyecto-card figure {
+        margin-bottom: 10px;
+    }
+
+    /* Tarjetas de habilidad en columna */
+    /* (equivalent to .meta-card { flex-direction: column; gap: 8px }) */
+    .tarjeta-habilidad {
+        width: 100%;
+    }
+
+    /* Lema: texto más pequeño */
+    /* (equivalent to .bloque-bienvenida h2 { font-size: 1.4rem }) */
+    .lema {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    #intro h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Tabla de progreso: fuente y celdas más pequeñas para que quepan */
+    /* (equivalent a table { font-size: 0.85rem } y td, th { padding: 8px }) */
+    #progreso table {
+        font-size: 0.85rem;
+    }
+
+    #progreso td,
+    #progreso th {
+        padding: 8px;
+    }
+
+    #progreso progress {
+        width: 60px;
+        height: 12px;
+    }
+
+    #progreso span {
+        font-size: 12px;
+    }
+
+    /* Bordes laterales más delgados para ahorrar espacio */
+    #intro {
+        border-left-width: 5px;
+    }
+
+    #experiencia {
+        border-left-width: 4px;
+    }
+}

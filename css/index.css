@@ -148,3 +148,20 @@ article:hover {
 main section {
     margin-bottom: 24px;
 }
+
+/* RESPONSIVO*/
+
+/* ── MÓVIL: hasta 700px ────────────────────────────────────── */
+@media screen and (max-width: 700px) {
+
+    nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav a{
+        width: calc(40% - 10px);
+        margin: 5px 0;
+        text-align: center;
+    }

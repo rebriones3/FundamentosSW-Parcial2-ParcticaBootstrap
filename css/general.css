@@ -438,66 +438,88 @@ kbd {
    Esto prepara el camino hacia CSS responsive.
    ============================================================ */
 
-/* Se aplica solo cuando la pantalla mide 700px o menos, normalmente celulares o tablets pequeñas */
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-    /* Selecciona el menú de navegación */
-    nav {
-        /* Coloca los elementos del menú uno debajo del otro */
-        flex-direction: column;
-    }
-
-    /* Selecciona cada enlace dentro del menú */
-    nav a {
-        /* Hace que cada enlace ocupe todo el ancho disponible */
-        width: 100%;
-
-        /* Centra el texto dentro de cada enlace */
-        text-align: center;
-    }
-
-    /* Selecciona el título principal de la página */
-    h1 {
-        /* Reduce el tamaño del título para que no se vea muy grande en celular */
-        font-size: 26px;
-    }
-
-    /* Selecciona el contenido principal y la barra lateral */
+    /* El contenido principal ocupa más ancho en tablet */
     main,
     aside {
-        /* Hace que ocupen el 95% del ancho, dejando un pequeño margen */
         width: 95%;
     }
 
-    /* Selecciona secciones, artículos y barra lateral */
+    /* Las tablas pueden desbordar; permitir scroll horizontal */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+
+/* ── MÓVIL: pantallas de 700px o menos ────────────────────── */
+@media screen and (max-width: 700px) {
+
+    /* Encabezado: menos relleno, texto más pequeño */
+    header {
+        padding: 18px 12px;
+    }
+
+    /* Título principal más pequeño para que no se corte */
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    /* Menú en columna, cada enlace ocupa todo el ancho */
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Contenido principal y aside con ancho completo */
+    main,
+    aside {
+        width: 95%;
+        margin: 12px auto;
+    }
+
+    /* Menos relleno interior en secciones y artículos */
     section,
     article,
     aside {
-        /* Reduce el espacio interno para aprovechar mejor la pantalla pequeña */
-        padding: 15px;
+        padding: 14px;
+        margin-bottom: 12px;
     }
 
-    /* Selecciona las tablas */
-    table {
-        /* Reduce el tamaño del texto de la tabla para que entre mejor */
-        font-size: 14px;
+    /* Párrafos con texto alineado a la izquierda (más legible en móvil) */
+    p {
+        text-align: left;
     }
 
-    /* Selecciona campos de formulario y botones */
-    input,
-    select,
-    textarea,
-    button {
-        /* Ocupa todo el ancho disponible del contenedor */
+    /* Imágenes y videos ocupan todo el ancho disponible */
+    img,
+    video,
+    iframe {
         width: 100%;
-        /* Impide que el elemento crezca más allá del ancho de su contenedor */
-        max-width: 100%;
-        /* Hace que padding y bordes se incluyan dentro del ancho total */
-        box-sizing: border-box;
-        /* Tamaño de texto cómodo para lectura y uso en dispositivos móviles */
-        font-size: 16px;
+        height: auto;
     }
 
+    /* Tablas: scroll horizontal si el contenido no cabe */
+    table {
+        display: block;
+        overflow-x: auto;
+        font-size: 13px;
+    }
+
+    /* Campos de formulario y botones: ancho completo */
     input,
     select,
     textarea,
@@ -505,13 +527,32 @@ kbd {
     meter,
     progress,
     audio {
-        /* Ocupa todo el ancho disponible del contenedor */
         width: 100%;
-        /* Impide que el elemento crezca más allá del ancho de su contenedor */
         max-width: 100%;
-        /* Hace que padding y bordes se incluyan dentro del ancho total */
         box-sizing: border-box;
-        /* Tamaño de texto cómodo para lectura y uso en dispositivos móviles */
         font-size: 16px;
+    }
+
+    /* Los checkbox y radio no deben ocupar todo el ancho */
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: auto;
+    }
+
+    /* Botones con más espacio para que sean fáciles de tocar */
+    button {
+        padding: 12px;
+        margin-top: 4px;
+    }
+
+    /* Figcaption un poco más grande */
+    figcaption {
+        font-size: 13px;
+    }
+
+    /* Pie de página: menos relleno */
+    footer {
+        padding: 14px;
+        font-size: 14px;
     }
 }
