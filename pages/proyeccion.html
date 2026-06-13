@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi Proyección - Ruth Estefany</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/mundito.ico" type="image/x-icon" />
+
+    <!-- 1. Bootstrap primero -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- 2. Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- 3. CSS propios DESPUÉS de Bootstrap -->
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/proyeccion.css" />
+  </head>
+
+  <body>
+
+    <!-- ================================================
+         HEADER
+         ================================================ -->
+    <header>
+      <h1>Mi Proyección Profesional</h1>
+      <p>Ruth Estefany Briones Moreira</p>
+    </header>
+
+    <!-- ================================================
+         NAVBAR  [Navbar]
+         ================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <i class="fa-solid fa-house me-1"></i> Inicio
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navPrincipal"
+          aria-controls="navPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">
+                <i class="fa-solid fa-house"></i> Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">
+                <i class="fa-solid fa-briefcase"></i> Portafolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="proyeccion.html">
+                <i class="fa-solid fa-rocket"></i> Proyección
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cto/contacto.html">
+                <i class="fa-solid fa-envelope"></i> Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================================================
+         MAIN
+         ================================================ -->
+    <main>
+
+      <!-- ── ALERT de presentación  [Alert] ── -->
+      <div class="container mt-4">
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">
+            ¡Bienvenido/a a mi proyección!
+          </h4>
+          <p>
+            Soy estudiante de 4.º semestre de Ingeniería en Tecnologías de la
+            Información en la ESPE Santo Domingo. Tengo 19 años, vivo en Santo
+            Domingo – Puerto Limón y esta página muestra hacia dónde me dirijo
+            profesionalmente.
+          </p>
+          <hr />
+          <p class="mb-0">
+            Me apasionan el diseño gráfico, la edición de video y la creación de
+            páginas web. Soy estudiante Z, sin materias perdidas, y mi meta es
+            crecer en el desarrollo web y el diseño digital.
+          </p>
+        </div>
+      </div>
+
+      <!-- ── CAROUSEL de imágenes  [Carousel + Images] ── -->
+      <section class="container mt-4">
+        <h2 class="mb-3">Galería</h2>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded-3 overflow-hidden">
+            <div class="carousel-item active">
+              <img src="../img/me/_JDP9545-2.jpg" class="d-block w-100" alt="Foto de Ruth 1" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-2 p-2">
+                <h5>Desarrolladora Web</h5>
+                <p>Mi meta profesional principal.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/me/_JDP9547-3.jpg" class="d-block w-100" alt="Foto de Ruth 2" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-2 p-2">
+                <h5>Diseñadora Digital</h5>
+                <p>Diseño gráfico y edición de video.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/me/Captura de pantalla 2026-06-12 094104.png" class="d-block w-100" alt="Proyecto web" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-2 p-2">
+                <h5>Mis primeros proyectos</h5>
+                <p>HTML, CSS y Bootstrap en la ESPE.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ── CARDS de proyección  [Container + Grid + Cards + Badges + Buttons] ── -->
+      <section class="container mt-4">
+        <h2 class="mb-3">¿Hacia dónde me proyecto?</h2>
+
+        <!-- row-cols-1 = 1 columna en móvil, 2 en md -->
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-code me-2"></i>Desarrollo Web
+                  <span class="badge bg-success ms-1">Meta principal</span>
+                </h5>
+                <p class="card-text">
+                  Quiero dominar HTML, CSS, JavaScript y frameworks modernos
+                  como React para construir sitios web profesionales, accesibles
+                  y con buen diseño. Me interesa el frontend porque combina
+                  lógica y creatividad visual.
+                </p>
+                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalDesarrollo">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-pen-ruler me-2"></i>Diseño Gráfico y UX/UI
+                  <span class="badge bg-warning text-dark ms-1">Pasión</span>
+                </h5>
+                <p class="card-text">
+                  El diseño gráfico y la edición de video son áreas que disfruto
+                  profundamente. Quiero especializarme en UX/UI para crear
+                  interfaces bonitas y fáciles de usar, uniendo diseño con
+                  tecnología.
+                </p>
+                <button type="button" class="btn btn-warning btn-sm text-dark" data-bs-toggle="modal" data-bs-target="#modalDiseno">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-graduation-cap me-2"></i>Metas Académicas
+                  <span class="badge bg-primary ms-1">ESPE</span>
+                </h5>
+                <p class="card-text">
+                  Terminar Ingeniería en TI con excelencia académica, sin
+                  materias perdidas como hasta ahora. Participar en proyectos de
+                  vinculación y especializarme en desarrollo web y diseño digital.
+                </p>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAcademico">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-briefcase me-2"></i>Rol Profesional
+                  <span class="badge bg-danger ms-1">Sueño</span>
+                </h5>
+                <p class="card-text">
+                  Aspiro a trabajar como desarrolladora frontend o diseñadora
+                  web en proyectos creativos. A largo plazo, me veo liderando el
+                  área digital de una empresa o fundando mi propio estudio de
+                  diseño y desarrollo.
+                </p>
+                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalRol">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Áreas de interés: 3 columnas iguales en todos los tamaños -->
+        <h2 class="mb-3 mt-4">Áreas de interés</h2>
+        <div class="row text-center g-3">
+          <div class="col-4">
+            <div class="p-3 border rounded">
+              <i class="fa-brands fa-html5 fa-2x text-danger mb-2 d-block"></i>
+              <span class="fw-bold">HTML &amp; CSS</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="p-3 border rounded">
+              <i class="fa-solid fa-palette fa-2x text-warning mb-2 d-block"></i>
+              <span class="fw-bold">Diseño Gráfico</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="p-3 border rounded">
+              <i class="fa-solid fa-film fa-2x text-primary mb-2 d-block"></i>
+              <span class="fw-bold">Video</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROGRESS BARS  [Progress bars + Utilities + Spacing] ── -->
+      <section class="container mt-4">
+        <h2 class="mb-4">Habilidades en desarrollo</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="fw-bold">HTML &amp; CSS</span><span class="text-muted">80%</span>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" role="progressbar" style="width:80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1">
+              <span class="fw-bold">Bootstrap 5</span><span class="text-muted">65%</span>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-info" role="progressbar" style="width:65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1">
+              <span class="fw-bold">Diseño Gráfico</span><span class="text-muted">75%</span>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-warning" role="progressbar" style="width:75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="fw-bold">Edición de Video</span><span class="text-muted">70%</span>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-danger" role="progressbar" style="width:70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1">
+              <span class="fw-bold">JavaScript</span><span class="text-muted">35%</span>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width:35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-1">
+              <span class="fw-bold">Git &amp; GitHub</span><span class="text-muted">50%</span>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-secondary" role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── ACCORDION + LIST GROUP  [Accordion + List groups] ── -->
+      <section class="container mt-4">
+        <h2 class="mb-4">Plan de metas por etapa</h2>
+
+        <div class="accordion" id="accordionMetas">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headCorto">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCorto" aria-expanded="true" aria-controls="collapseCorto">
+                <i class="fa-solid fa-flag me-2"></i> Corto plazo (2026)
+              </button>
+            </h3>
+            <div id="collapseCorto" class="accordion-collapse collapse show" aria-labelledby="headCorto" data-bs-parent="#accordionMetas">
+              <div class="accordion-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item active" aria-current="true"><i class="fa-solid fa-check me-2"></i>Aprobar todos los semestres sin materias perdidas</li>
+                  <li class="list-group-item">Publicar mi portafolio en GitHub Pages</li>
+                  <li class="list-group-item">Terminar el curso de Fundamentos Web en la ESPE</li>
+                  <li class="list-group-item">Practicar diseño con Canva y Figma</li>
+                  <li class="list-group-item">Iniciar aprendizaje de JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headMedio">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMedio" aria-expanded="false" aria-controls="collapseMedio">
+                <i class="fa-solid fa-rocket me-2"></i> Mediano plazo (2027 – 2028)
+              </button>
+            </h3>
+            <div id="collapseMedio" class="accordion-collapse collapse" aria-labelledby="headMedio" data-bs-parent="#accordionMetas">
+              <div class="accordion-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item active" aria-current="true"><i class="fa-solid fa-check me-2"></i>Dominar React y diseño responsivo avanzado</li>
+                  <li class="list-group-item">Obtener certificación en UX/UI Design</li>
+                  <li class="list-group-item">Realizar prácticas profesionales en empresa tech</li>
+                  <li class="list-group-item">Construir 3 proyectos web reales en mi portafolio</li>
+                  <li class="list-group-item">Aprender edición de video con Premiere Pro</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headLargo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLargo" aria-expanded="false" aria-controls="collapseLargo">
+                <i class="fa-solid fa-star me-2"></i> Largo plazo (2029 en adelante)
+              </button>
+            </h3>
+            <div id="collapseLargo" class="accordion-collapse collapse" aria-labelledby="headLargo" data-bs-parent="#accordionMetas">
+              <div class="accordion-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item active" aria-current="true"><i class="fa-solid fa-check me-2"></i>Graduarme como Ingeniera en TI</li>
+                  <li class="list-group-item">Trabajar en empresa de desarrollo web o agencia creativa</li>
+                  <li class="list-group-item">Fundar mi propio estudio de diseño y desarrollo</li>
+                  <li class="list-group-item">Dictar talleres de diseño web en Santo Domingo</li>
+                  <li class="list-group-item">Especializarme con una maestría en diseño digital</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TABLE de certificaciones  [Table] ── -->
+      <section class="container mt-4">
+        <h2 class="mb-4">Certificaciones y cursos planeados</h2>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Curso / Certificación</th>
+                <th scope="col">Plataforma</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Año</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Fundamentos Web – HTML, CSS, Bootstrap</td>
+                <td>ESPE Santo Domingo</td>
+                <td><span class="badge bg-success">En curso</span></td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Diseño UX/UI con Figma</td>
+                <td>Coursera</td>
+                <td><span class="badge bg-warning text-dark">Planificado</span></td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>JavaScript Moderno – ES6+</td>
+                <td>Udemy</td>
+                <td><span class="badge bg-warning text-dark">Planificado</span></td>
+                <td>2027</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>React – Desarrollo Frontend</td>
+                <td>freeCodeCamp</td>
+                <td><span class="badge bg-secondary">Por iniciar</span></td>
+                <td>2027</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Edición de Video con Premiere Pro</td>
+                <td>Adobe</td>
+                <td><span class="badge bg-secondary">Por iniciar</span></td>
+                <td>2028</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ── BOTONES – herramientas  [Buttons + Badge + Typography] ── -->
+      <section class="container mt-4">
+        <h2 class="mb-2">Herramientas que quiero dominar</h2>
+        <p class="lead mb-3">Tecnologías y herramientas en las que planeo seguir creciendo:</p>
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-primary"><i class="fa-brands fa-js me-1"></i>JavaScript</button>
+          <button type="button" class="btn btn-success"><i class="fa-brands fa-react me-1"></i>React</button>
+          <button type="button" class="btn btn-warning text-dark"><i class="fa-solid fa-pen-nib me-1"></i>Figma</button>
+          <button type="button" class="btn btn-danger"><i class="fa-solid fa-film me-1"></i>Premiere Pro</button>
+          <button type="button" class="btn btn-info text-dark"><i class="fa-brands fa-github me-1"></i>GitHub</button>
+          <button type="button" class="btn btn-dark"><i class="fa-solid fa-database me-1"></i>SQL</button>
+          <button type="button" class="btn btn-secondary"><i class="fa-solid fa-layer-group me-1"></i>Bootstrap</button>
+          <button type="button" class="btn btn-light border"><i class="fa-brands fa-node-js me-1"></i>Node.js</button>
+        </div>
+        <div class="mt-3">
+          <button type="button" class="btn btn-success position-relative">
+            Tecnologías de interés
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              8<span class="visually-hidden">herramientas por aprender</span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ── FORM de contacto  [Forms + Spacing] ── -->
+      <section class="container mt-4 mb-4">
+        <div class="row g-4">
+          <aside class="col-12 col-md-4">
+            <h2>¿Tienes una oportunidad?</h2>
+            <p>
+              Estoy abierta a prácticas profesionales, colaboraciones en
+              proyectos de diseño web o cualquier oportunidad relacionada con
+              tecnología y creatividad.
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i>Santo Domingo – Puerto Limón, Ecuador</li>
+              <li class="mb-2"><i class="fa-solid fa-school me-2"></i>ESPE Santo Domingo · 4.º semestre</li>
+              <li><i class="fa-brands fa-github me-2"></i>github.com/ruthbriones</li>
+            </ul>
+          </aside>
+
+          <article class="col-12 col-md-8">
+            <h2>Contacto</h2>
+            <form novalidate>
+              <div class="mb-3">
+                <label for="nombreContacto" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre" required />
+              </div>
+              <div class="mb-3">
+                <label for="emailContacto" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="emailContacto" placeholder="correo@ejemplo.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="tipoOportunidad" class="form-label">Tipo de oportunidad</label>
+                <select class="form-select" id="tipoOportunidad" required>
+                  <option selected disabled>Selecciona una opción</option>
+                  <option>Prácticas profesionales</option>
+                  <option>Proyecto de diseño web</option>
+                  <option>Colaboración académica</option>
+                  <option>Proyecto freelance</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="mensajeContacto" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensajeContacto" rows="4" placeholder="Cuéntame sobre la oportunidad..."></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkPrivacidad" />
+                <label class="form-check-label" for="checkPrivacidad">
+                  Acepto que mis datos sean usados para esta comunicación.
+                </label>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <button type="submit" class="btn btn-success">
+                  <i class="fa-solid fa-paper-plane me-1"></i>Enviar mensaje
+                </button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── Imagen decorativa  [Images] ── -->
+      <article class="container mt-4 mb-4 text-center">
+        <h2 class="mb-3"><i class="fa-solid fa-code me-2"></i>Mi primer proyecto web</h2>
+        <p class="lead mb-3">La base de todo: aprender haciendo en la ESPE.</p>
+        <img src="../img/portafolio/proyecto.png" class="img-fluid rounded" alt="Captura de mi proyecto web en la ESPE" />
+      </article>
+
+    </main>
+
+    <!-- ================================================
+         MODALES  [Modal]
+         ================================================ -->
+
+    <!-- Modal Desarrollo Web -->
+    <div class="modal fade" id="modalDesarrollo" tabindex="-1" aria-labelledby="modalDesarrolloLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="modalDesarrolloLabel"><i class="fa-solid fa-code me-2"></i>Desarrollo Web</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Mi proyección principal es convertirme en desarrolladora web frontend. Mi plan:</p>
+            <ul>
+              <li>Dominar HTML, CSS y Bootstrap (ya en marcha en la ESPE).</li>
+              <li>Aprender JavaScript moderno y React.js.</li>
+              <li>Crear proyectos reales y publicarlos en GitHub Pages.</li>
+              <li>Diseñar interfaces limpias, accesibles y responsivas.</li>
+              <li>Unir diseño gráfico con programación web.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Diseño -->
+    <div class="modal fade" id="modalDiseno" tabindex="-1" aria-labelledby="modalDisenoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="modalDisenoLabel"><i class="fa-solid fa-pen-ruler me-2"></i>Diseño Gráfico y UX/UI</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>El diseño es mi pasión. Mi plan en esta área:</p>
+            <ul>
+              <li>Profundizar en Figma para diseño de interfaces.</li>
+              <li>Aprender principios de UX: usabilidad y experiencia de usuario.</li>
+              <li>Crear prototipos de apps y sitios web antes de programarlos.</li>
+              <li>Mejorar mis habilidades en edición de video con Premiere Pro.</li>
+              <li>Combinar diseño y código en proyectos completos.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Académico -->
+    <div class="modal fade" id="modalAcademico" tabindex="-1" aria-labelledby="modalAcademicoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="modalAcademicoLabel"><i class="fa-solid fa-graduation-cap me-2"></i>Metas Académicas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Estoy en 4.º semestre de Ingeniería en TI en la ESPE Santo Domingo. Sin materias perdidas. Mis metas académicas:</p>
+            <ul>
+              <li>Mantener mi récord sin materias perdidas hasta graduarme.</li>
+              <li>Participar en proyectos de vinculación comunitaria.</li>
+              <li>Integrar grupos de investigación o clubes tech en la ESPE.</li>
+              <li>Aplicar a becas o intercambios en el área STEM.</li>
+              <li>Graduarme como Ingeniera en TI con honores.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Rol Profesional -->
+    <div class="modal fade" id="modalRol" tabindex="-1" aria-labelledby="modalRolLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title" id="modalRolLabel"><i class="fa-solid fa-briefcase me-2"></i>Rol Profesional</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Mi visión profesional a largo plazo, desde Santo Domingo al mundo:</p>
+            <ul>
+              <li>Trabajar como desarrolladora frontend en una agencia creativa.</li>
+              <li>Diseñar la identidad digital de marcas y empresas.</li>
+              <li>Fundar mi propio estudio de diseño y desarrollo web.</li>
+              <li>Generar empleo en mi comunidad de Puerto Limón.</li>
+              <li>Ser referente tech femenina en Santo Domingo, Ecuador.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================
+         FOOTER
+         ================================================ -->
+    <footer>
+      <p>&copy; 2026 Ruth Estefany Briones Moreira.</p>
+      <p>Ingeniería en Tecnologías de la Información – ESPE Santo Domingo.</p>
+      <address>
+        Santo Domingo – Puerto Limón, Ecuador<br />
+        Contacto académico: <a href="mailto:ruth@ejemplo.com">ruth@ejemplo.com</a>
+      </address>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,594 @@
+/* ============================================================
+   proyeccion.css  —  Mobile First
+   Carga DESPUÉS de Bootstrap 5 y DESPUÉS de general.css.
+   Paleta: verde #1b7505 · dorado #dba112 · oscuro #0d1910
+   Estrategia: estilos base = móvil, luego @media min-width.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: HEADER
+   ============================================================ */
+
+header {
+    background-color: #0d1910;
+    color: white;
+    padding: 24px 16px 18px;
+    text-align: center;
+}
+
+header h1 {
+    color: #dba112;
+    font-size: 22px;           /* móvil: compacto */
+    margin: 0 0 6px 0;
+    border-bottom: none;       /* anula general.css si aplica */
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ============================================================
+   BLOQUE 2: NAVBAR  — Mobile First
+   En móvil el menú colapsa (Bootstrap lo maneja).
+   Añadimos color y evitamos desbordamiento.
+   ============================================================ */
+
+.navbar {
+    background-color: #dba112 !important;
+    padding: 8px 12px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #0d1910 !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: white !important;
+    text-decoration: none;
+    background-color: #1b7505;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Botón hamburguesa visible en móvil */
+.navbar .navbar-toggler {
+    border-color: #0d1910;
+}
+
+.navbar .navbar-toggler-icon {
+    filter: brightness(0);
+}
+
+/* Menú desplegado en móvil: no desborda */
+.navbar-collapse {
+    width: 100%;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+/* En móvil cada enlace ocupa su propia fila */
+.navbar-nav .nav-item {
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 14px;
+    display: block;
+}
+
+
+/* ============================================================
+   BLOQUE 3: MAIN — contenedor base móvil
+   ============================================================ */
+
+main {
+    padding: 0;
+    overflow-x: hidden;        /* evita scroll horizontal */
+}
+
+/* Cada sección dentro de main: padding cómodo en móvil */
+main > section,
+main > div.container,
+main > article.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* h2 dentro de main: verde con borde dorado, tamaño móvil */
+main h2 {
+    color: #1b7505;
+    border-bottom: 2px solid #dba112;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+    font-size: 18px;           /* más pequeño en móvil */
+}
+
+main h3 {
+    color: #0d1910;
+    font-size: 16px;
+}
+
+
+/* ============================================================
+   BLOQUE 4: ALERT
+   ============================================================ */
+
+.alert-success {
+    background-color: #fffef7;
+    border-left: 6px solid #dba112;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0 8px 8px 0;
+    color: #0d1910;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.alert-success .alert-heading {
+    color: #1b7505;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+/* ============================================================
+   BLOQUE 5: CARRUSEL  — imagen adaptada en móvil
+   ============================================================ */
+
+.carousel-inner img {
+    width: 100%;
+    height: 200px;             /* móvil: altura controlada */
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+}
+
+/* Captions ocultos en móvil (Bootstrap ya tiene d-none d-md-block,
+   pero si no se usó esa clase, los ocultamos aquí) */
+.carousel-caption {
+    display: none;
+}
+
+
+/* ============================================================
+   BLOQUE 6: CARDS  — apiladas en móvil
+   Bootstrap row-cols-1 ya las apila; reforzamos estilos.
+   ============================================================ */
+
+.card {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: white;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    width: 100%;               /* ocupa todo el ancho en móvil */
+}
+
+.card:hover {
+    border-color: #1b7505;
+    transform: translateY(-3px);
+}
+
+.card .card-title {
+    color: #1b7505;
+    border-bottom: 2px solid #dba112;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.card .card-text {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Área de interés: grid de íconos — en móvil van en fila de 3 */
+.col .p-3.border.rounded {
+    font-size: 13px;
+    padding: 10px 6px !important;
+}
+
+.col .p-3.border.rounded i {
+    font-size: 1.5rem;
+}
+
+
+/* ============================================================
+   BLOQUE 7: BOTONES — táctiles en móvil
+   ============================================================ */
+
+.btn-success {
+    background-color: #1b7505;
+    border-color: #1b7505;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #0d1910;
+    border-color: #0d1910;
+}
+
+/* Botones en grupo (herramientas) — wrap ya lo da d-flex flex-wrap */
+.d-flex.flex-wrap.gap-2 .btn {
+    font-size: 13px;
+    padding: 7px 12px;
+}
+
+
+/* ============================================================
+   BLOQUE 8: PROGRESS BARS
+   ============================================================ */
+
+.progress {
+    border-radius: 50px;
+    height: 12px;
+    background-color: #e4e4e4;
+}
+
+.progress-bar {
+    background-color: #1b7505;
+    border-radius: 50px;
+}
+
+/* Etiquetas de habilidad: en móvil caben en una fila */
+.d-flex.justify-content-between {
+    font-size: 13px;
+}
+
+
+/* ============================================================
+   BLOQUE 9: ACCORDION  — Mobile First
+   ============================================================ */
+
+.accordion-item {
+    border: 1px solid #dddddd;
+    border-radius: 8px !important;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    color: #0d1910;
+    font-weight: bold;
+    background-color: white;
+    border-left: 5px solid #1b7505;
+    font-size: 14px;
+    padding: 12px 14px;
+    white-space: normal;       /* evita desbordamiento en móvil */
+    word-break: break-word;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fffef7;
+    color: #0d1910;
+    border-left: 5px solid #dba112;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(219, 161, 18, 0.3);
+}
+
+/* List group dentro del accordion */
+.list-group-item {
+    font-size: 14px;
+    padding: 10px 14px;
+}
+
+.list-group-item.active {
+    background-color: #1b7505;
+    border-color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 10: TABLE  — scroll horizontal en móvil
+   ============================================================ */
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+.table {
+    min-width: 520px;          /* fuerza scroll si no cabe */
+    margin-bottom: 0;
+}
+
+.table thead {
+    background-color: #0d1910;
+    color: #dba112;
+}
+
+.table thead th {
+    color: #dba112;
+    font-size: 13px;
+    padding: 10px 8px;
+    white-space: nowrap;
+}
+
+.table tbody td,
+.table tbody th {
+    font-size: 13px;
+    padding: 9px 8px;
+    vertical-align: middle;
+}
+
+.table tbody td:first-child,
+.table tbody th[scope="row"] {
+    font-weight: bold;
+    color: #1b7505;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-hover > tbody > tr:hover > * {
+    background-color: #f7fff4;
+}
+
+
+/* ============================================================
+   BLOQUE 11: FORMULARIO  — cómodo en móvil
+   ============================================================ */
+
+.form-control,
+.form-select {
+    font-size: 16px;           /* evita zoom automático en iOS */
+    padding: 10px 12px;
+    border: 1px solid #a8a8a7;
+    border-radius: 6px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #1b7505;
+    box-shadow: 0 0 0 0.2rem rgba(219, 161, 18, 0.3);
+    outline: none;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #0d1910;
+    font-size: 14px;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botones del formulario: ancho completo en móvil */
+form .btn {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 12px;
+    font-size: 15px;
+}
+
+
+/* ============================================================
+   BLOQUE 12: ASIDE del formulario
+   ============================================================ */
+
+aside h2 {
+    font-size: 18px;
+    color: #1b7505;
+    border-bottom: 2px solid #dba112;
+    padding-bottom: 6px;
+}
+
+aside p,
+aside li {
+    font-size: 14px;
+}
+
+
+/* ============================================================
+   BLOQUE 13: IMAGEN DECORATIVA
+   ============================================================ */
+
+article.container img.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 14: MODALES
+   ============================================================ */
+
+.modal-header.bg-success {
+    background-color: #1b7505 !important;
+}
+
+.modal-header.bg-warning {
+    background-color: #dba112 !important;
+    color: #0d1910;
+}
+
+.modal-title {
+    font-size: 16px;
+}
+
+.modal-body ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+
+/* ============================================================
+   BLOQUE 15: FOOTER
+   ============================================================ */
+
+footer {
+    background-color: #0d1910;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 20px 16px;
+    text-align: center;
+    font-size: 13px;
+    border-top: 3px solid #dba112;
+}
+
+footer p {
+    text-align: center;
+    margin: 4px 0;
+}
+
+footer address {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+}
+
+footer a {
+    color: #dba112;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* ============================================================
+   BLOQUE 16: TABLET  (min-width: 576px)
+   ============================================================ */
+
+@media screen and (min-width: 576px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main h2 {
+        font-size: 20px;
+    }
+
+    .carousel-inner img {
+        height: 280px;
+    }
+
+    .carousel-caption {
+        display: block;
+    }
+
+    .accordion-button {
+        font-size: 15px;
+        padding: 14px 18px;
+    }
+
+    form .btn {
+        width: auto;
+        margin-right: 8px;
+        margin-bottom: 0;
+        padding: 10px 18px;
+    }
+}
+
+
+/* ============================================================
+   BLOQUE 17: TABLET GRANDE / ESCRITORIO  (min-width: 768px)
+   ============================================================ */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 40px 24px 30px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .navbar .nav-item {
+        width: auto;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 12px;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    .carousel-inner img {
+        height: 380px;
+    }
+
+    .card .card-title {
+        font-size: 16px;
+    }
+
+    .card .card-text {
+        font-size: 15px;
+    }
+
+    .list-group-item {
+        font-size: 15px;
+    }
+
+    .table thead th,
+    .table tbody td,
+    .table tbody th {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .d-flex.flex-wrap.gap-2 .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 28px 24px;
+        font-size: 14px;
+    }
+}
+
+
+/* ============================================================
+   BLOQUE 18: ESCRITORIO  (min-width: 992px)
+   ============================================================ */
+
+@media screen and (min-width: 992px) {
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    .carousel-inner img {
+        height: 440px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+    }
+}
