@@ -60,9 +60,9 @@ PRACTICABOOTSTRAP/
 
 **contacto.html** — Información de contacto, enlaces a redes sociales y un formulario con validaciones.
 
-**portafolio.html** — Nueva página creada para este despacho. Muestra el perfil profesional, habilidades, proyectos y una tabla de progreso.
+**portafolio.html** —  página creada para este despacho. Muestra el perfil profesional, habilidades, proyectos y una tabla de progreso.
 
-**proyeccion.html** — Nueva sección clave del proyecto enfocada en la visión a futuro, metas a corto/mediano plazo, habilidades por fortalecer y proyección académica y profesional.
+**proyeccion.html** — Nueva pagina del proyecto enfocada en la visión a futuro, metas a corto/mediano plazo, habilidades por fortalecer y proyección académica y profesional.
 
 ---
 
