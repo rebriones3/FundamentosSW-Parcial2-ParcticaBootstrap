@@ -2,9 +2,10 @@
 
 ## Descripción del Proyecto
 
-Este sitio web es la evolución de la práctica anterior desarrollada para el curso de Fundamentos de Web. Siguiendo la secuencia de aprendizaje, primero se trabajó la estructura semántica con HTML y luego la presentación visual con CSS puro. En esta nueva versión independiente, el proyecto ha sido migrado y mejorado utilizando **Bootstrap 5** para lograr una interfaz completamente responsiva, moderna y eficiente.
+El sitio web desarrollado es un portafolio personal que presenta información académica, profesional y personal de Ruth Estefany Briones Moreira. El sitio cuenta con varias páginas, entre ellas inicio, portafolio, proyección profesional y contacto, permitiendo una navegación sencilla entre las diferentes secciones.
+Para el diseño se utilizaron hojas de estilo externas, principalmente general.css y archivos CSS específicos para cada página, con el objetivo de mantener una apariencia uniforme en todo el sitio web. Además, en la página Proyección Profesional se incorporó la biblioteca Bootstrap 5, aprovechando componentes como la barra de navegación, tarjetas, carrusel, formularios, tablas, acordeones, barras de progreso y ventanas modales para mejorar la presentación y la experiencia del usuario.
+Dentro del sitio se emplearon diversos elementos de HTML, como encabezados, secciones, artículos, imágenes, enlaces, formularios y pies de página. Gracias a la combinación de HTML, CSS y Bootstrap, la información se presenta de forma organizada, atractiva y accesible, facilitando la interacción y navegación del usuario.
 
-A diferencia del proyecto pasado que mostraba quién soy y qué he realizado, este nuevo enfoque mantiene la lógica del portafolio personal pero se centra en mi **proyección personal, académica y profesional**. Explica hacia dónde me proyecto, qué deseo llegar a ser, qué habilidades quiero fortalecer y qué metas espero alcanzar a futuro.
 
 ---
 
