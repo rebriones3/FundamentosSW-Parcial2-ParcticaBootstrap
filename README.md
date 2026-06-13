@@ -1,76 +1,88 @@
-# My Professional Profile — PracticaCSSFinal
+# Mi Perfil Profesional y Proyección — PracticaBootstrap
 
-## Project Description
+## Descripción del Proyecto
 
-I made this website as a practice project for my Web Fundamentals course. The idea was to learn how to organize a page using HTML in a structured way and then style it with CSS. It includes several connected pages, forms, multimedia, and a personal portfolio section.
+Este sitio web es la evolución de la práctica anterior desarrollada para el curso de Fundamentos de Web. Siguiendo la secuencia de aprendizaje, primero se trabajó la estructura semántica con HTML y luego la presentación visual con CSS puro. En esta nueva versión independiente, el proyecto ha sido migrado y mejorado utilizando **Bootstrap 5** para lograr una interfaz completamente responsiva, moderna y eficiente.
 
-The entire site is designed to look good on both desktop and mobile.
+A diferencia del proyecto pasado que mostraba quién soy y qué he realizado, este nuevo enfoque mantiene la lógica del portafolio personal pero se centra en mi **proyección personal, académica y profesional**. Explica hacia dónde me proyecto, qué deseo llegar a ser, qué habilidades quiero fortalecer y qué metas espero alcanzar a futuro.
 
 ---
 
-## Folder Structure
+## Estructura de Carpetas
 
 ```
-PracticaCSSFinal/
+PRACTICABOOTSTRAP/
 │
 ├── index.html
-│
-├── css/
-│   ├── general.css
-│   ├── index.css
-│   ├── buscar.css
-│   ├── contacto.css
-│   └── portafolio.css
-│
-├── pages/
-│   ├── buscar.html
-│   ├── portafolio.html
-│   └── cto/
-│       └── contacto.html
-│
-├── img/
-│   └── espe/
-│       └── imagenEjemploEspe.png
+├── README.md
 │
 ├── audio/
 │   └── audioEjemploA7X.mp3
 │
+├── css/
+│   ├── buscar.css
+│   ├── contacto.css
+│   ├── general.css
+│   ├── index.css
+│   ├── portafolio.css
+│   └── proyeccion.css
+│
+├── img/
+│   ├── espe/
+│   │   └── imagenEjemploEspe.png
+│   ├── me/
+│   │   ├── _JDP9545-2.jpg
+│   │   ├── _JDP9547-3.jpg
+│   │   └── Captura de pantalla 2026-06-12 094104.png
+│   ├── portafolio/
+│   │   ├── proyecto.png
+│   │   ├── sistema-escolar.png
+│   │   ├── sistema-inventario.png
+│   │   └── sistema-portafolio.png
+│   └── mundito.ico
+│
+├── pages/
+│   ├── buscar.html
+│   ├── portafolio.html
+│   ├── proyeccion.html
+│   └── cto/
+│       └── contacto.html
+│
 └── video/
-    └── videoEjemploDiagnostica.mp4
-```
 
 ---
 
-## Site Pages
+## Páginas del sitio
 
-**index.html** — main page. Includes the introduction, interests, multimedia, forms, and a schedule table.
+**index.html** — Página principal. Incluye la introducción, intereses, contenido multimedia, formularios y una tabla de horarios.
 
-**buscar.html** — page that explains how the GET method works in forms. Has its own search form.
+**buscar.html** — Página que explica cómo funciona el método GET en los formularios. Tiene su propio formulario de búsqueda.
 
-**contacto.html** — contact information, social media links, and a form with validations.
+**contacto.html** — Información de contacto, enlaces a redes sociales y un formulario con validaciones.
 
-**portafolio.html** — new page created for this practice. Displays the professional profile, skills, projects, and a progress table.
+**portafolio.html** — Nueva página creada para este despacho. Muestra el perfil profesional, habilidades, proyectos y una tabla de progreso.
 
----
-
-## Screenshots
-
-> Add screenshots of each page in desktop and mobile view.
+**proyeccion.html** — Nueva sección clave del proyecto enfocada en la visión a futuro, metas a corto/mediano plazo, habilidades por fortalecer y proyección académica y profesional.
 
 ---
 
-## Technologies Used
+## Capturas de pantalla
+
+> Se incluyen capturas de pantalla de cada página en vista de escritorio y móvil.
+
+--
+
+## Tecnologías utilizadas
 
 - HTML5
 - CSS3
-- Font Awesome 6.5.0 (icons, loaded from CDN)
+- Font Awesome 6.5.0 (iconos, cargados desde CDN)
+- Bootstrap 5 (Framework de diseño responsivo)
 
-No JavaScript or frameworks were used. Everything is pure HTML and CSS.
+--
 
----
-
-## Author
+## Autora
 
 **Estefany Briones**
-Web Fundamentals Course — Semantic HTML and CSS
+Curso de Fundamentos Web — HTML,CSS y Bootstrap
 Ecuador, 2026

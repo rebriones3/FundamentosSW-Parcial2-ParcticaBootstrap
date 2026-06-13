@@ -378,7 +378,8 @@
         </div>
       </section>
 
-      <!-- ── TABLE de certificaciones  [Table] ── -->
+      <!-- ── TABLE + PROGRESS BARS combinadas  [Table + Progress bars] ── -->
+      <!-- Combinación: tabla con columna de progreso usando progress bars -->
       <section class="container mt-4">
         <h2 class="mb-4">Certificaciones y cursos planeados</h2>
         <div class="table-responsive">
@@ -389,6 +390,7 @@
                 <th scope="col">Curso / Certificación</th>
                 <th scope="col">Plataforma</th>
                 <th scope="col">Estado</th>
+                <th scope="col">Progreso</th>
                 <th scope="col">Año</th>
               </tr>
             </thead>
@@ -398,6 +400,12 @@
                 <td>Fundamentos Web – HTML, CSS, Bootstrap</td>
                 <td>ESPE Santo Domingo</td>
                 <td><span class="badge bg-success">En curso</span></td>
+                <td style="min-width:120px;">
+                  <div class="progress" style="height:10px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small class="text-muted">75%</small>
+                </td>
                 <td>2026</td>
               </tr>
               <tr>
@@ -405,6 +413,12 @@
                 <td>Diseño UX/UI con Figma</td>
                 <td>Coursera</td>
                 <td><span class="badge bg-warning text-dark">Planificado</span></td>
+                <td>
+                  <div class="progress" style="height:10px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small class="text-muted">10%</small>
+                </td>
                 <td>2026</td>
               </tr>
               <tr>
@@ -412,6 +426,12 @@
                 <td>JavaScript Moderno – ES6+</td>
                 <td>Udemy</td>
                 <td><span class="badge bg-warning text-dark">Planificado</span></td>
+                <td>
+                  <div class="progress" style="height:10px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width:5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small class="text-muted">5%</small>
+                </td>
                 <td>2027</td>
               </tr>
               <tr>
@@ -419,6 +439,12 @@
                 <td>React – Desarrollo Frontend</td>
                 <td>freeCodeCamp</td>
                 <td><span class="badge bg-secondary">Por iniciar</span></td>
+                <td>
+                  <div class="progress" style="height:10px;">
+                    <div class="progress-bar bg-secondary" role="progressbar" style="width:0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small class="text-muted">0%</small>
+                </td>
                 <td>2027</td>
               </tr>
               <tr>
@@ -426,6 +452,12 @@
                 <td>Edición de Video con Premiere Pro</td>
                 <td>Adobe</td>
                 <td><span class="badge bg-secondary">Por iniciar</span></td>
+                <td>
+                  <div class="progress" style="height:10px;">
+                    <div class="progress-bar bg-secondary" role="progressbar" style="width:0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small class="text-muted">0%</small>
+                </td>
                 <td>2028</td>
               </tr>
             </tbody>
@@ -472,6 +504,10 @@
               <li class="mb-2"><i class="fa-solid fa-school me-2"></i>ESPE Santo Domingo · 4.º semestre</li>
               <li><i class="fa-brands fa-github me-2"></i>github.com/ruthbriones</li>
             </ul>
+            <!-- Botón que abre modal con formulario rápido [Modal + Form combinados] -->
+            <button type="button" class="btn btn-success mt-2 w-100" data-bs-toggle="modal" data-bs-target="#modalContactoRapido">
+              <i class="fa-solid fa-bolt me-1"></i>Contacto rápido
+            </button>
           </aside>
 
           <article class="col-12 col-md-8">
@@ -517,11 +553,16 @@
         </div>
       </section>
 
-      <!-- ── Imagen decorativa  [Images] ── -->
+      <!-- ── Imagen decorativa  [Images + figure + figcaption] ── -->
       <article class="container mt-4 mb-4 text-center">
         <h2 class="mb-3"><i class="fa-solid fa-code me-2"></i>Mi primer proyecto web</h2>
         <p class="lead mb-3">La base de todo: aprender haciendo en la ESPE.</p>
-        <img src="../img/portafolio/proyecto.png" class="img-fluid rounded" alt="Captura de mi proyecto web en la ESPE" />
+        <figure class="mb-0">
+          <img src="../img/portafolio/proyecto.png" class="img-fluid rounded" alt="Captura de mi proyecto web en la ESPE" />
+          <figcaption class="text-muted mt-2" style="font-size:14px;">
+            <i class="fa-solid fa-image me-1"></i>Portafolio personal — HTML, CSS y Bootstrap · ESPE Santo Domingo 2026
+          </figcaption>
+        </figure>
       </article>
 
     </main>
@@ -641,6 +682,43 @@
         Contacto académico: <a href="mailto:ruth@ejemplo.com">ruth@ejemplo.com</a>
       </address>
     </footer>
+
+    <!-- Modal con Formulario rápido [Modal + Form combinados] -->
+    <div class="modal fade" id="modalContactoRapido" tabindex="-1" aria-labelledby="modalContactoRapidoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="modalContactoRapidoLabel">
+              <i class="fa-solid fa-bolt me-2"></i>Contacto rápido
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-muted mb-3">Déjame tu nombre y correo y te respondo pronto 😊</p>
+            <form novalidate>
+              <div class="mb-3">
+                <label for="nombreRapido" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreRapido" placeholder="Tu nombre" required />
+              </div>
+              <div class="mb-3">
+                <label for="emailRapido" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="emailRapido" placeholder="correo@ejemplo.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="mensajeRapido" class="form-label">¿En qué puedo ayudarte?</label>
+                <textarea class="form-control" id="mensajeRapido" rows="3" placeholder="Escribe tu mensaje..."></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-success">
+              <i class="fa-solid fa-paper-plane me-1"></i>Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script
