@@ -49,7 +49,7 @@ PRACTICABOOTSTRAP/
 │       └── contacto.html
 │
 └── video/
-
+```
 ---
 
 ## Páginas del sitio
@@ -68,7 +68,7 @@ PRACTICABOOTSTRAP/
 
 ## Capturas de pantalla
 
-> Se incluyen capturas de pantalla de cada página en vista de escritorio y móvil.
+ Se incluyen capturas de pantalla de cada página en vista de escritorio y móvil.
 
 --
 
