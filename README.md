@@ -67,6 +67,37 @@ PRACTICABOOTSTRAP/
 
 ---
 
+## Capturas de Pantalla
+
+### Página Principal
+![Página Principal](img/capturas/PaginaIndex.png)
+
+### Portafolio Profesional
+![Portafolio](img/capturas/PaginaPortafolio.png)
+
+### Proyección Profesional
+![Proyección Profesional](img/capturas/PaginaProyeccion.png)
+
+### Contacto
+![Contacto](img/capturas/PaginaContacto.png)
+
+### Busqueda
+![Contacto](img/capturas/PaginaBusqueda.png)
+
+---
+## Instrucciones para visualizar el sitio
+
+1. Descargar o clonar el repositorio.
+2. Abrir la carpeta del proyecto.
+3. Ejecutar el archivo `index.html` en un navegador web.
+4. Navegar entre las páginas mediante el menú principal.
+5. Para visualizar Bootstrap y Font Awesome correctamente, se requiere conexión a Internet debido al uso de CDN.
+
+```bash
+git clone https://github.com/TU-USUARIO/PracticaBootstrap.git
+```
+---
+
 ## Tecnologías utilizadas
 
 - HTML5
